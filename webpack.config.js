@@ -44,10 +44,6 @@ module.exports = {
           presets: ['es2015']
         }
       },
-      {
-        test: /\.scss$/,
-        loaders: ["style", "css", "sass"]
-      },
       { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192' },
       { test: /pixi.js/, loader: "expose?PIXI" },
       { test: /phaser-split\.js$/, loader: 'expose?Phaser' },
